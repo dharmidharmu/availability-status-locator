@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pic"
+    tools:context=".set">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set your Location"
+                android:gravity="center"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+
+            <EditText
+                android:id="@+id/addlat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Latitude"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/addlog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Longitutde"
+                android:inputType="numberDecimal" />
+
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mybtn3"
+                android:onClick="save"
+                android:text="Save" />
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
